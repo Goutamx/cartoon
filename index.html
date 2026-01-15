@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NCERT Class 12 Political Cartoons (1–38)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Same Google Font as the reference site -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1976d2;
+      --primary-dark: #0f51a4;
+      --accent: #ffb300;
+      --bg: #f3f6fb;
+      --card-bg: #ffffff;
+      --text-main: #1f2933;
+      --text-muted: #6b7280;
+      --border-soft: #d1d5db;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: radial-gradient(circle at top left, #e3f2fd 0, #f3f6fb 40%, #e8eaf6 100%);
+      color: var(--text-main);
+    }
+
+    .page-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    /* ======= HEADER ======= */
+    .page-header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      margin: 0;
+      color: #0f172a;
+      letter-spacing: 0.03em;
+    }
+
+    .page-subtitle {
+      margin: 6px 0 10px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .meta-line {
+      margin: 4px 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .badge-strip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(25, 118, 210, 0.08);
+      color: var(--primary-dark);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* ======= TOP NAV (for ranges) ======= */
+    .top-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0 20px;
+    }
+
+    .top-nav a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 6px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(255, 255, 255, 0.95);
+      color: #1f2937;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12);
+      transition: background 0.18s ease, color 0.18s ease,
+                  transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .top-nav a:hover {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #ffffff;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.2);
+    }
+
+    /* ======= RANGE LABELS ======= */
+    .range-label {
+      margin: 26px 0 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 12px 4px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      box-shadow: 0 4px 10px rgba(15, 23, 42, 0.12);
+    }
+
+    .range-label::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+    }
+
+    /* ======= CARD LAYOUT (for each cartoon) ======= */
+    .card {
+      background: var(--card-bg);
+      padding: 18px 20px 20px;
+      margin: 18px auto;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
+      border-color: rgba(59, 130, 246, 0.5);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #111827;
+    }
+
+    .q-number-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .card p {
+      margin: 6px 0 10px;
+      line-height: 1.5;
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+
+    /* ======= IMAGE STYLE ======= */
+    .cartoon-image {
+      display: block;
+      margin: 12px auto 10px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 3px solid rgba(15, 23, 42, 0.5);
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+      background-color: #ffffff;
+    }
+
+    /* highlight “map-like” images if needed */
+    .cartoon-image.map-outline {
+      border-color: #16a34a;
+      box-shadow: 0 10px 25px rgba(22, 163, 74, 0.5);
+    }
+
+    /* ======= FOOTER ======= */
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 32px;
+    }
+
+    footer a {
+      color: var(--primary-dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ======= RESPONSIVE ======= */
+    @media (max-width: 640px) {
+      .card {
+        padding: 14px 12px 16px;
+        margin: 12px auto;
+      }
+
+      .page-title {
+        font-size: 1.5rem;
+      }
+
+      .card h2 {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+
+    <!-- ============== HEADER ============== -->
+    <header class="page-header" id="top">
+      <h1 class="page-title">Political Cartoons – Class 12 NCERT (1–38)</h1>
+      <p class="page-subtitle">Cartoon-based questions with clear, short explanations</p>
+      <p class="meta-line">Prepared by: <strong>Goutam Riwar</strong></p>
+      <p class="meta-line">Class 12 – Political Science Project</p>
+      <div class="badge-strip">
+        <span class="badge-dot"></span>
+        <span>Tip: Use the buttons below to jump to any cartoon range.</span>
+      </div>
+    </header>
+
+    <!-- ============== TOP NAV ============== -->
+    <nav class="top-nav">
+      <a href="#range-1">Cartoons 1–10</a>
+      <a href="#range-2">Cartoons 11–20</a>
+      <a href="#range-3">Cartoons 21–30</a>
+      <a href="#range-4">Cartoons 31–38</a>
+    </nav>
+
+    <!-- ============== CARTOONS 1–10 ============== -->
+    <div id="range-1" class="range-label">Cartoons 1–10</div>
+
+    <!-- Cartoon 1 -->
+    <section class="card" id="cartoon1">
+      <h2>
+        <span class="q-number-pill">1</span>
+        Princely States and the People
+      </h2>
+      <img src="cartoon1.png" alt="Cartoon of a princely ruler sitting on a poor subject while a national leader asks for defence, foreign affairs and communication files." class="cartoon-image">
+      <p>
+        The cartoon shows how princes in the princely states enjoyed luxury while their people suffered.
+        The national leader is asking the ruler to hand over only defence, foreign affairs and communications to the Indian Union.
+        It suggests that the first priority of the government was to integrate the states peacefully, without directly attacking the princes’ social power.
+        The people’s exploitation, however, continued under these rulers for some time.
+      </p>
+    </section>
+
+    <!-- Cartoon 2 -->
+    <section class="card" id="cartoon2">
+      <h2>
+        <span class="q-number-pill">2</span>
+        Demands for Linguistic States
+      </h2>
+      <img src="cartoon2.png" alt="Cartoon of different regional groups pulling in different directions and demanding linguistic states around a worried central leader." class="cartoon-image">
+      <p>
+        Different regional movements like Visala Andhra, Maha Gujarat, Samyukta Karnataka and Brihan Maharashtra are shown demanding their own states.
+        Each group is pulling in its own direction, while the central leader in the middle looks confused and under pressure.
+        The cartoon highlights how strong and emotional the demand for linguistic states became in the 1950s.
+        It also shows how difficult it was for the central government to control or ignore these mass agitations.
+      </p>
+    </section>
+
+    <!-- Cartoon 3 -->
+    <section class="card" id="cartoon3">
+      <h2>
+        <span class="q-number-pill">3</span>
+        The ‘Genie’ of Linguism
+      </h2>
+      <img src="cartoon3.png" alt="Cartoon of a giant genie stepping out of a bottle marked SRC Linguism while a small man tries to coax it back." class="cartoon-image">
+      <p>
+        The big genie represents rising linguistic passions and agitations for separate states.
+        The small man with the bottle symbolises the State Reorganisation Commission trying to control this powerful force.
+        The cartoon says that, like a genie, the politics of linguism could not be easily pushed back once it was released.
+        Leaders watching from behind show how nervous the national leadership was about this issue.
+      </p>
+    </section>
+
+    <!-- Cartoon 4 -->
+    <section class="card" id="cartoon4">
+      <h2>
+        <span class="q-number-pill">4</span>
+        Election Committee and Party Tickets
+      </h2>
+      <img src="cartoon4.png" alt="Cartoon of top leaders on a high Election Committee platform and a large crowd of aspiring candidates below with folded hands." class="cartoon-image">
+      <p>
+        The leaders on the platform represent the powerful party election committee that decides who will get tickets to contest.
+        The crowd below, with folded hands, shows ordinary workers and aspirants trying to please the committee.
+        A man even climbs a tree to attract attention, symbolising how some hopefuls feel completely ignored.
+        The cartoon comments on the lack of inner-party democracy and the centralised control over candidate selection.
+      </p>
+    </section>
+
+    <!-- Cartoon 5 -->
+    <section class="card" id="cartoon5">
+      <h2>
+        <span class="q-number-pill">5</span>
+        Tug of War Between Government and Opposition
+      </h2>
+      <img src="cartoon5.png" alt="Cartoon of government leaders sitting on a big tree while opposition leaders pull a rope tied around it in a tug of war." class="cartoon-image">
+      <p>
+        Here the tree stands for the government firmly rooted in power, with ministers comfortably seated on its branches.
+        Opposition leaders are shown pulling hard at a rope, trying to topple the tree and bring the government down.
+        The large crowd in the background watches this struggle from a distance.
+        The cartoon suggests that, despite the efforts of the opposition, the ruling party in the 1950s remained much stronger.
+      </p>
+    </section>
+
+    <!-- Cartoon 6 -->
+    <section class="card" id="cartoon6">
+      <h2>
+        <span class="q-number-pill">6</span>
+        Race for Leadership
+      </h2>
+      <img src="cartoon6.png" alt="Cartoon of a woman politician already standing on the first-place podium while a male runner marked M has just started." class="cartoon-image">
+      <p>
+        The woman leader is already placed on the winner’s stand and is being applauded by party leaders.
+        The runner marked “M” has just started, showing that the contest for top post was unfair from the beginning.
+        The cartoon suggests that the party high command had more or less decided the winner in advance.
+        It comments on how internal elections in the dominant party were heavily influenced by those in power.
+      </p>
+    </section>
+
+    <!-- Cartoon 7 -->
+    <section class="card" id="cartoon7">
+      <h2>
+        <span class="q-number-pill">7</span>
+        Non-Communist United Front
+      </h2>
+      <img src="cartoon7.png" alt="Cartoon of many leaders from different parties on one long bicycle on a narrow road with a sign saying Keep Right, No Left Turn." class="cartoon-image">
+      <p>
+        The long bicycle represents an alliance of many non-communist, right-of-centre parties trying to move together.
+        The road sign “Keep Right – No Left Turn” shows that they are united mainly by being anti-left and anti-communist.
+        Riding such a loaded cycle on a rough, narrow road looks risky and unstable.
+        The cartoon hints that this United Front was fragile and difficult to manage, even though it tried to present a common alternative.
+      </p>
+    </section>
+
+    <!-- Cartoon 8 -->
+    <section class="card" id="cartoon8">
+      <h2>
+        <span class="q-number-pill">8</span>
+        The ‘Left Hook’ in Presidential Election
+      </h2>
+      <img src="cartoon8.png" alt="Cartoon of a victorious, garlanded boxer while another boxer labelled Congress lies knocked out in the ring." class="cartoon-image">
+      <p>
+        The victorious boxer stands with a garland, while the boxer wearing shorts marked “Congress” is lying on the floor.
+        A worried leader kneels near the fallen boxer, and a woman politician happily greets the winner.
+        The cartoon refers to the presidential election in which the candidate supported by the Prime Minister defeated the official party nominee.
+        This ‘left hook’ weakened the old party bosses and shifted the balance of power within the Congress.
+      </p>
+    </section>
+
+    <!-- Cartoon 9 -->
+    <section class="card" id="cartoon9">
+      <h2>
+        <span class="q-number-pill">9</span>
+        Split Inside the Congress
+      </h2>
+      <img src="cartoon9.png" alt="Cartoon of a woman leader with the Congress flag walking ahead while three senior leaders follow with a different flag." class="cartoon-image">
+      <p>
+        The woman leader carrying the Congress flag walks firmly ahead, ignoring the three senior leaders behind her.
+        They carry a flag titled “The Indian Syndicate National” and remind her that Gandhi once wished the Congress to be dissolved.
+        The cartoon highlights the clash between the old guard (the Syndicate) and the new leadership over the future of the party.
+        It shows how Gandhi’s name was used in this power struggle, while the new leader wanted to keep Congress as an active political party.
+      </p>
+    </section>
+
+    <!-- Cartoon 10 -->
+    <section class="card" id="cartoon10">
+      <h2>
+        <span class="q-number-pill">10</span>
+        The Grand Finish, 1971 Elections
+      </h2>
+      <img src="cartoon10.png" alt="Cartoon of the same woman leader occupying first, second and third place on the Mid-Term Race victory stand." class="cartoon-image">
+      <p>
+        The same leader is shown occupying all three positions on the victory stand—strong, weak and doubtful constituencies.
+        Opposition candidates, still at the starting line, are shocked and say they thought they were ahead.
+        The cartoon explains the 1971 Lok Sabha results, where the ruling party under her leadership swept almost all types of seats.
+        It underlines both the popularity of her campaign and the complete miscalculation of the divided opposition.
+      </p>
+    </section>
+
+    <!-- ============== CARTOONS 11–20 ============== -->
+    <div id="range-2" class="range-label">Cartoons 11–20</div>
+
+    <!-- Cartoon 11 -->
+    <section class="card" id="cartoon11">
+      <h2>
+        <span class="q-number-pill">11</span>
+        Massive Support and Hidden Dangers
+      </h2>
+      <img src="cartoon11.png" alt="Cartoon of a leader holding a trophy marked Massive Support with a monster inside" class="cartoon-image">
+      <p>
+        This cartoon shows a political leader proudly holding a big trophy labelled “Massive Support”.
+        But inside the trophy there is a dangerous monster, suggesting that huge popular support can also
+        hide the growth of authoritarian tendencies.
+        It is a comment on how unchecked power, even if won democratically, can become harmful for democracy.
+      </p>
+    </section>
+
+    <!-- Cartoon 12 -->
+    <section class="card" id="cartoon12">
+      <h2>
+        <span class="q-number-pill">12</span>
+        Central Control over States
+      </h2>
+      <img src="cartoon12.png" alt="Cartoon of a central leader changing heads of state leaders on a conveyor belt" class="cartoon-image">
+      <p>
+        Here the central leader is shown fixing and changing the “heads” of leaders from different States
+        as if they are products on a factory belt.
+        The cartoon criticises the practice of the high command deciding who will rule the States,
+        weakening federalism and reducing Chief Ministers to puppets.
+      </p>
+    </section>
+
+    <!-- Cartoon 13 -->
+    <section class="card" id="cartoon13">
+      <h2>
+        <span class="q-number-pill">13</span>
+        Economic Crisis of the Early 1970s
+      </h2>
+      <img src="cartoon13.png" alt="Cartoon of two men talking about hard days ahead and hoping 1973 ends quickly" class="cartoon-image">
+      <p>
+        The Prime Minister warns that “hard days” are coming, while the common man only hopes that the bad year
+        will pass quickly.
+        The cartoon refers to the economic crisis of the early 1970s, with price rise, unemployment and shortages.
+        It highlights the gap between official slogans and the everyday suffering of ordinary people.
+      </p>
+    </section>
+
+    <!-- Cartoon 14 -->
+    <section class="card" id="cartoon14">
+      <h2>
+        <span class="q-number-pill">14</span>
+        The Call to ‘Save Democracy’
+      </h2>
+      <img src="cartoon14.png" alt="Cartoon of rulers accusing a man holding a Save Democracy placard" class="cartoon-image">
+      <p>
+        On one side we see scenes of corruption, lawlessness and violence; on the other side,
+        a peaceful leader holds a placard saying “Save Democracy”.
+        The rulers accuse him of trying to destroy democracy and grab power.
+        The cartoon refers to the protest movement of the mid‑1970s and shows how governments may label
+        democratic criticism as a threat.
+      </p>
+    </section>
+
+    <!-- Cartoon 15 -->
+    <section class="card" id="cartoon15">
+      <h2>
+        <span class="q-number-pill">15</span>
+        Political Crisis before the Emergency
+      </h2>
+      <img src="cartoon15.png" alt="Cartoon of a leader in a chair marked Conditional Stay Order being pushed into waves of political crisis" class="cartoon-image">
+      <p>
+        A leader sits firmly on a chair labelled “Conditional Stay Order” while another person tells
+        her that, with so much support, she should not think of resigning.
+        Huge waves marked “Political Crisis” surround them, but the cheering crowd on the shore shouts “Stay”.
+        The cartoon shows how court decisions and party support were used to justify holding on to office
+        even when the political system was in deep crisis, just before the Emergency.
+      </p>
+    </section>
+
+    <!-- Cartoon 16 -->
+    <section class="card" id="cartoon16">
+      <h2>
+        <span class="q-number-pill">16</span>
+        Government Not Listening
+      </h2>
+      <img src="cartoon16.png" alt="Cartoon of a leader covering his ears while loudspeakers drown out a common man's voice" class="cartoon-image">
+      <p>
+        A leader covers his ears saying, “I can’t hear you!!” to a citizen speaking at a microphone.
+        Around them, huge loudspeakers blast out words like party infighting, probes, exposes, violence
+        and opposition demands.
+        The cartoon suggests that the rulers are so busy with scandals and political battles
+        that they are unable or unwilling to hear the real voice of the people.
+      </p>
+    </section>
+
+    <!-- Cartoon 17 -->
+    <section class="card" id="cartoon17">
+      <h2>
+        <span class="q-number-pill">17</span>
+        Fall of the Janata Government
+      </h2>
+      <img src="cartoon17.png" alt="Cartoon of a woman with a placard I toppled Janata Government and leaders arguing behind" class="cartoon-image">
+      <p>
+        A woman walks proudly with a placard claiming that she alone toppled the Janata government.
+        The leaders of that government angrily reply that it was actually their own quarrels over two years
+        that brought it down.
+        The cartoon underlines that the first non‑Congress government at the Centre collapsed mainly
+        because of internal conflicts and lack of unity.
+      </p>
+    </section>
+
+    <!-- Cartoon 18 -->
+    <section class="card" id="cartoon18">
+      <h2>
+        <span class="q-number-pill">18</span>
+        Problems of Opposition Unity
+      </h2>
+      <img src="cartoon18.png" alt="Cartoon of many leaders tugging at one umbrella in the rain" class="cartoon-image">
+      <p>
+        In heavy rain, several leaders struggle to grab one large umbrella, each trying to get under it first.
+        The caption says, “By all means, let’s get under one umbrella, but let me do it first!”
+        The cartoon comments on how opposition parties often talk about unity against the ruling party,
+        but personal ambitions and rivalry prevent real cooperation.
+      </p>
+    </section>
+
+    <!-- Cartoon 19 -->
+    <section class="card" id="cartoon19">
+      <h2>
+        <span class="q-number-pill">19</span>
+        Sweeping the Polls
+      </h2>
+      <img src="cartoon19.png" alt="Cartoon of a woman with a broom walking away from a dustbin full of defeated leaders" class="cartoon-image">
+      <p>
+        A woman holding a broom walks away confidently, while defeated leaders and their “Vote” placards
+        are crammed into a dustbin.
+        The line “Sweeping the Polls” plays on the double meaning of sweeping with a broom
+        and winning elections by a huge margin.
+        The cartoon shows how one party’s massive victory pushed the opposition into political irrelevance.
+      </p>
+    </section>
+
+    <!-- Cartoon 20 -->
+    <section class="card" id="cartoon20">
+      <h2>
+        <span class="q-number-pill">20</span>
+        Risky Path of Economic Reforms
+      </h2>
+      <img src="cartoon20.png" alt="Cartoon of leaders crossing a shaky bridge of loans and foreign capital towards prosperity" class="cartoon-image">
+      <p>
+        Leaders are shown walking on a weak, broken wooden bridge made of “Loans”, “NRI”, “Foreign Capital”,
+        “IMF” and “World Bank” towards a cliff marked “Welcome to Prosperity”.
+        One leader admits that the path is risky and difficult but promises that all worries will end
+        once they reach the other side.
+        The cartoon is about the economic reforms of the 1990s, highlighting both the hope of growth
+        and the dangers of heavy dependence on foreign loans and agencies.
+      </p>
+    </section>
+
+    <!-- ============== CARTOONS 21–30 ============== -->
+    <div id="range-3" class="range-label">Cartoons 21–30</div>
+
+    <!-- Cartoon 21 -->
+    <section class="card" id="cartoon21">
+      <h2>
+        <span class="q-number-pill">21</span>
+        Support from Outside
+      </h2>
+      <img src="cartoon21.png" alt="Cartoon of a prime minister as a puppet controlled from the roof of Parliament" class="cartoon-image">
+      <p>
+        This cartoon shows a prime minister being controlled like a puppet by two leaders sitting on top of Parliament.
+        They had promised only “outside support”, but in reality they are pulling the strings of the government.
+        It comments on the weakness of minority governments that depend on outside support from other parties.
+        Such governments are often unstable and heavily influenced by their supporters.
+      </p>
+    </section>
+
+    <!-- Cartoon 22 -->
+    <section class="card" id="cartoon22">
+      <h2>
+        <span class="q-number-pill">22</span>
+        1971 vs 1999
+      </h2>
+      <img src="cartoon22.png" alt="Cartoon comparing one‑party dominance in 1971 with coalition politics in 1999" class="cartoon-image">
+      <p>
+        The 1971 side shows a very strong Congress leader and a tiny opposition leader bowing down.
+        The 1999 side shows one Congress leader facing a huge tower of many regional and national leaders.
+        It explains how Indian politics moved from Congress dominance to a multi‑party coalition era.
+        The middle quote shows the Congress yearning for the days when it alone dominated politics.
+      </p>
+    </section>
+
+    <!-- Cartoon 23 -->
+    <section class="card" id="cartoon23">
+      <h2>
+        <span class="q-number-pill">23</span>
+        Look East / Act East
+      </h2>
+      <img src="cartoon23.png" alt="Cartoon on India's Look East policy and competition from East Asian nations" class="cartoon-image">
+      <p>
+        The cartoon shows an Indian leader near burning files labelled “competition”, with a board of “East Asian nations”.
+        It suggests that closer economic ties with East and South‑East Asia bring very tough competition.
+        The remark “We’ll have to get used to it” means India cannot avoid this challenge.
+        Instead, it must improve its performance to benefit from globalisation.
+      </p>
+    </section>
+
+    <!-- Cartoon 24 -->
+    <section class="card" id="cartoon24">
+      <h2>
+        <span class="q-number-pill">24</span>
+        Then and Now in China
+      </h2>
+      <img src="cartoon24.png" alt="Cartoon contrasting Maoist communism with present‑day capitalist style in China" class="cartoon-image">
+      <p>
+        The upper panel shows an old communist leader with the little red book, symbolising strict ideology.
+        The lower panel shows a modern Chinese leader in a business suit with a red “power tie”, symbolising capitalism.
+        The cartoon contrasts revolutionary communism of the past with business‑oriented China today.
+        It suggests that China now mixes communist politics with capitalist economics.
+      </p>
+    </section>
+
+    <!-- Cartoon 25 -->
+    <section class="card" id="cartoon25">
+      <h2>
+        <span class="q-number-pill">25</span>
+        Great Wall and Dragon
+      </h2>
+      <img src="cartoon25.png" alt="Cartoon using the Great Wall turning into a dragon on a world map to show China's rise" class="cartoon-image map-outline">
+      <p>
+        The Great Wall turns into a powerful dragon moving across the world map, showing China’s rising power.
+        The small man in front represents other countries trying to cope with this growth.
+        The cartoon asks whether they can really stop or contain China’s expanding economic influence.
+      </p>
+    </section>
+
+    <!-- Cartoon 26 -->
+    <section class="card" id="cartoon26">
+      <h2>
+        <span class="q-number-pill">26</span>
+        Chinese Bicycle
+      </h2>
+      <img src="cartoon26.png" alt="Cartoon of a bicycle marked China with a communist wheel and a dollar wheel" class="cartoon-image">
+      <p>
+        The bicycle marked “China” has one wheel with the communist symbol and the other with a dollar sign.
+        This represents a duality: communist political control combined with a capitalist‑style economy.
+        The cartoon hints that this mix is both a strength and a contradiction in today’s China.
+      </p>
+    </section>
+
+    <!-- Cartoon 27 -->
+    <section class="card" id="cartoon27">
+      <h2>
+        <span class="q-number-pill">27</span>
+        Dual Role in Pakistan
+      </h2>
+      <img src="cartoon27.png" alt="Cartoon of a Pakistani ruler teaching equations that show the value of his two roles" class="cartoon-image">
+      <p>
+        The equations on the board use two pictures of the same person – in army uniform and in civilian dress.
+        They show that without either role his value becomes “zero”, but combining both gives “two”.
+        The cartoon says his power depends on holding both army and presidential posts,
+        criticising the military’s dominance over democracy in Pakistan.
+      </p>
+    </section>
+
+    <!-- Cartoon 28 -->
+    <section class="card" id="cartoon28">
+      <h2>
+        <span class="q-number-pill">28</span>
+        Balancing Lion and Tiger in Sri Lanka
+      </h2>
+      <img src="cartoon28.png" alt="Cartoon of a Sri Lankan leader balancing between a lion and a tiger" class="cartoon-image">
+      <p>
+        The leader balances a pole with a lion (Sinhala hardliners) on one side and a tiger (Tamil militants) on the other.
+        It shows the government’s dilemma during the civil war – trying to satisfy the majority while negotiating with rebels.
+        Any move towards one side risks angering the other and upsetting peace efforts.
+      </p>
+    </section>
+
+    <!-- Cartoon 29 -->
+    <section class="card" id="cartoon29">
+      <h2>
+        <span class="q-number-pill">29</span>
+        Indo‑Pak Relations
+      </h2>
+      <img src="cartoon29.png" alt="Cartoon showing bunkers replaced by a maze of dialogue tables in Indo-Pak relations" class="cartoon-image">
+      <p>
+        The landscape of bunkers is now filled with countless dialogue tables instead of guns.
+        Indo‑Pak relations have shifted from open warfare to endless, complicated talks.
+        The maze suggests that although dialogue has replaced war, reaching clear solutions remains difficult.
+      </p>
+    </section>
+
+    <!-- Cartoon 30 -->
+    <section class="card" id="cartoon30">
+      <h2>
+        <span class="q-number-pill">30</span>
+        SAARC Summit
+      </h2>
+      <img src="cartoon30.png" alt="Cartoon of SAARC summit table with empty India and Pakistan chairs" class="cartoon-image">
+      <p>
+        At the SAARC table, the chairs of India and Pakistan are empty while leaders walk out.
+        This shows how conflicts between these two major members often disrupt SAARC meetings.
+        When they quarrel or boycott, regional cooperation in South Asia comes to a standstill.
+      </p>
+    </section>
+
+    <!-- ============== CARTOONS 31–38 ============== -->
+    <div id="range-4" class="range-label">Cartoons 31–38</div>
+
+    <!-- Cartoon 31 -->
+    <section class="card" id="cartoon31">
+      <h2>
+        <span class="q-number-pill">31</span>
+        External Powers in South Asia
+      </h2>
+      <img src="cartoon31.png" alt="Cartoon showing China and the US involved in India–Pakistan relations" class="cartoon-image">
+      <p>
+        These two cartoons show that issues between India and Pakistan are not decided only by them.
+        In the first, Pakistan wants China to talk about ‘core issues’ with India instead of only trade and commerce.
+        In the second, India and Pakistan are like tennis players while the US sits as the umpire deciding whose side the ball is on.
+        Together they show how big powers such as China and the US strongly influence politics in South Asia.
+      </p>
+    </section>
+
+    <!-- Cartoon 32 -->
+    <section class="card" id="cartoon32">
+      <h2>
+        <span class="q-number-pill">32</span>
+        UN and the 2006 Lebanon War
+      </h2>
+      <img src="cartoon32.png" alt="Cartoon showing destruction in Lebanon and a helpless UN" class="cartoon-image">
+      <p>
+        The scene of burning buildings and broken UN helmets shows the heavy destruction in Lebanon in 2006.
+        On the right, the UN Secretary‑General stands trapped inside a cage of barbed wire, looking powerless.
+        The cartoon criticises the UN for acting slowly and weakly, failing to stop the violence and protect civilians.
+        It also suggests that powerful states restrict what the UN and its Secretary‑General are able to do.
+      </p>
+    </section>
+
+    <!-- Cartoon 33 -->
+    <section class="card" id="cartoon33">
+      <h2>
+        <span class="q-number-pill">33</span>
+        Darfur – “A Big Helping of Words”
+      </h2>
+      <img src="cartoon33.png" alt="Cartoon on the humanitarian crisis in Darfur and empty promises" class="cartoon-image">
+      <p>
+        A starving woman and child from Darfur receive a bowl full of words like “aid”, “resolutions” and “never again” instead of real food.
+        Behind them, international officials carry a huge spoon crowded with more speeches and promises.
+        The cartoon says that the world only talks about the Darfur genocide but does little to stop killings or feed refugees.
+        It questions how effective global institutions really are in protecting human rights.
+      </p>
+    </section>
+
+    <!-- Cartoon 34 -->
+    <section class="card" id="cartoon34">
+      <h2>
+        <span class="q-number-pill">34</span>
+        Diplomacy or War?
+      </h2>
+      <img src="cartoon34.png" alt="Cartoon of a world leader holding the UN symbol in one hand and a war glove in the other" class="cartoon-image">
+      <p>
+        The leader holds a small UN symbol with an olive branch in one hand and a giant iron fist labelled “WAR” in the other.
+        The caption says that if the ‘right’ hand (the UN and peace talks) does not work, the ‘left’ hand of war will be used.
+        The cartoon criticises powerful countries for threatening military action when diplomacy does not give them what they want.
+        It shows the double face of foreign policy—speaking of peace but relying mainly on force.
+      </p>
+    </section>
+
+    <!-- Cartoon 35 -->
+    <section class="card" id="cartoon35">
+      <h2>
+        <span class="q-number-pill">35</span>
+        “Taming Peace” and Peacekeeping Forces
+      </h2>
+      <img src="cartoon35.png" alt="Cartoon of a soldier riding a dove symbolising peace" class="cartoon-image">
+      <p>
+        Here a fully armed soldier rides a giant dove, which normally stands for peace, and pulls it with reins.
+        The title “Taming Peace” makes this look strange, even paradoxical, for something called a “peacekeeping force”.
+        The cartoon suggests that when peace is controlled by soldiers and weapons, it becomes something imposed by force.
+        It raises the question whether real peace can be achieved mainly through military means.
+      </p>
+    </section>
+
+    <!-- Cartoon 36 -->
+    <section class="card" id="cartoon36">
+      <h2>
+        <span class="q-number-pill">36</span>
+        The “Nuclear Powers Club”
+      </h2>
+      <img src="cartoon36.png" alt="Cartoon of leaders in a Nuclear Powers Club and Iran and North Korea outside it" class="cartoon-image">
+      <p>
+        Leaders of established nuclear‑weapon states sit comfortably in a “Nuclear Powers Club”, smoking cigars shaped like nuclear bombs.
+        Iran and North Korea also hold such cigars but walk below them, shown as outsiders to the club.
+        The cartoon highlights the double standards of the global nuclear order: some states keep their weapons while others are punished for trying.
+        It asks whether such an unequal and exclusive system can ever be fair or safe.
+      </p>
+    </section>
+
+    <!-- Cartoon 37 -->
+    <section class="card" id="cartoon37">
+      <h2>
+        <span class="q-number-pill">37</span>
+        “No Exit” – Money for War, Not for Peace
+      </h2>
+      <img src="cartoon37.png" alt="Cartoon showing huge spending on wars and little money for a Department of Peace" class="cartoon-image">
+      <p>
+        Citizens request a few million dollars for a new “Department of Peace”, but the politician replies that the country cannot afford it.
+        At the same time, mountains of money are being spent on the Iraq war, the Afghan war, defence and homeland security.
+        The cartoon comments on how governments easily fund armies and weapons but hesitate to support peace‑related programmes.
+        It invites us to think whether our own country also spends more on war than on peace.
+      </p>
+    </section>
+
+    <!-- Cartoon 38 -->
+    <section class="card" id="cartoon38">
+      <h2>
+        <span class="q-number-pill">38</span>
+        Globalisation and Jobs – “Yesterday and Today”
+      </h2>
+      <img src="cartoon38.png" alt="Cartoon comparing old and new advice to children about China and India competing for jobs" class="cartoon-image">
+      <p>
+        In the past, a parent told a child to finish food because people in China and India were starving.
+        Today, another parent tells a child to finish homework because people in China and India are competing for the same jobs.
+        The cartoon shows how globalisation has changed the image of these countries—from only poor nations to strong competitors in the world economy.
+        It suggests that jobs can move across borders and that workers everywhere face new pressure to perform.
+      </p>
+    </section>
+
+    <!-- ============== FOOTER ============== -->
+    <footer>
+      &copy; Goutam Riwar – Class 12 Political Science Project |
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+  </div>
+</body>
+</html>
