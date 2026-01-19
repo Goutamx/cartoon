@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NCERT Class 12 Political Cartoons (1–38) – Question Bank</title>
+  <title>NCERT Class 12 Political Cartoons  – Question Bank</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Font -->
@@ -82,7 +82,7 @@
 
     /* ========== HEADER / HERO ========== */
 
-    /* Changed: header is no longer sticky; it scrolls away normally */
+    /* header scrolls normally */
     .site-header {
       background: linear-gradient(
         180deg,
@@ -209,9 +209,8 @@
       text-align: right;
     }
 
-    /* Toolbar */
+    /* Toolbar (sticky) */
 
-    /* Changed: toolbar is now the sticky element that stays on scroll */
     .site-toolbar {
       position: sticky;
       top: 0;
@@ -396,7 +395,7 @@
       margin-bottom: 12px;
     }
 
-    /* Changed: more mature brown–gold gradient around the number */
+    /* Number badge */
     .q-number-pill {
       display: inline-flex;
       align-items: center;
@@ -624,6 +623,15 @@
 
       .range-label {
         margin-top: 22px;
+      }
+
+      /* --- MOBILE SEARCH BOX FIX --- */
+      .search-box {
+        flex: 0 0 auto;      /* do not stretch vertically */
+        width: 100%;         /* take full width of toolbar */
+        max-width: 100%;
+        padding: 6px 12px;   /* slightly bigger tap target */
+        border-radius: 999px;/* keep clean pill shape */
       }
     }
   </style>
@@ -1664,4 +1672,3 @@
   </script>
 </body>
 </html>
-
